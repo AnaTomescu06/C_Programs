@@ -1,0 +1,27 @@
+-infinite_product
+-La fiecare iteratie se adauga la ps produsul dintre a si b
+-Pentru gasirea celui de al doilea maxim, a_first/b_first vor retine cea mai mare valoare
+-Daca numarul este mai mare decat a_first/b_first, ele vor deveni a_max/b_max
+-La fiecare iteratie la n_a/n_b se vor aduga patratele numerelor, iar la final se va extrage radicalul pentru a calcula norma 2
+
+-codeinvim
+-P retine punctajul initial
+-Stochez intr-un vector cu cat ar creste punctajul in cazul fiecarei materii care nu are media 10
+-Ordonez descrescator acest vector pentru a obtine un numar minim de mariri necesare
+-Iterez si adun punctajele din vectorul de mariri pana cand diferenta va fi mai mare su egala cu cea dintre punctajul necesar si cel actual, incrementandu-l pe m
+-Daca problema nu are solutie, m va fi -1
+
+-gigel_and_the_checkboard
+-position va retine patratele deja vizitate
+-Daca patratul este alb, se verifica pe rand daca numarul de pe biletel e pozitiv (mutare la dreapta) sau negativ(mutare la stanga) si daca piesa iese din tabla sau nu, modificandu-se distanta parcursa si indicele coloanei
+-Daca patratul este negru, se procedeaza similar, modificandu-se distanta si indicele liniei in functie de numarul de pe biletel
+
+-nomogram
+-Matricea ln_res va retine restrictiile pentru linii iar cl_res pentru coloane
+-Matricea nom contine nomograma ce trebuie verificata
+-Variabila correct va fi 1 in cazul in care nomograma este corecta si 0 in cazul in care este incorecta
+-Variabila consb verifica numarul de blocuri colorate din nomograma si este comparata cu restrictiile din ln_res/cl_res
+-Variabila id va calcula in timpul verificarii nomogramei indexul specific din ln_res/cl_res pentru grupurile de blocuri colorate 
+-Se verifica restrictiile pentru linii, correct devenind 0 in cazul in care consb nu corespunde cu ln_res, ducand la afisarea mesajului "Eroare"
+-Similar se procedeaza pentru coloane in cazul in care nu au fost detectate greseli in verificarea liniilor
+-Daca correct ramane 1, se va afisa mesajul "Corect"
